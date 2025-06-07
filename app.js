@@ -11,7 +11,7 @@ const app = express();
 const server = createServer(app);
 const io = new Server(server, {
      cors: {
-        origin: "https://chat-app-frontend-kgfp.vercel.app/",
+        origin: "https://chat-app-frontend-kgfp.vercel.app",
         methods: ["GET", "POST"],
         credentials: true,
     },
@@ -19,7 +19,7 @@ const io = new Server(server, {
 
 app.use(
      cors({
-        origin: "https://chat-app-frontend-kgfp.vercel.app/",
+        origin: "https://chat-app-frontend-kgfp.vercel.app",
         methods: ["GET", "POST"],
         credentials: true,
     })
